@@ -1,16 +1,15 @@
-const appointText = "";
-const appointTime = "";
-const currentDate;
-const currentTime;
-const currentContainer;
-const tempArray = [];
-const storedAppointments;
-const returnedAppointments;
-
+var appointText = "";
+var appointTime = "";
+var currentDate;
+var currentTime;
+var currentContainer;
+var tempArray = [];
+var storedAppointments;
+var returnedAppointments;
 
 
 $(window).on("load", function () {
-    currentDate = moment().format("dddd MMM Do YYYY, h:mm a");
+    currentDate = moment().format("dddd MMMM Do YYYY, h:mm a");
     $("#currentDay").append(currentDate);
     currentTime = moment().format("H");
 
@@ -47,7 +46,6 @@ $(window).on("load", function () {
         }
     }
 })
-
 
 
 $(".saveBtn").click(function () {
