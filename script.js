@@ -9,7 +9,7 @@ var returnedAppointments;
 
 
 $(window).on("load", function () {
-    currentDate = moment().format("dddd MMMM Do YYYY, h:mm a");
+    currentDate = moment().format("LLLL");
     $("#currentDay").append(currentDate);
     currentTime = moment().format("H");
 
