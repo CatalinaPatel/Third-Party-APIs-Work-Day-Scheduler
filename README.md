@@ -19,4 +19,4 @@ Systems used:
 
 Project Links:
 https://github.com/CatalinaPatel/Third-Party-APIs-Work-Day-Scheduler 
-https://github.com/CatalinaPatel/Third-Party-APIs-Work-Day-Scheduler.git
+ https://catalinapatel.github.io/Third-Party-APIs-Work-Day-Scheduler/

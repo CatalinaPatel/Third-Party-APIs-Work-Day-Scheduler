@@ -7,7 +7,6 @@ var currentContainer;
 var storedAppointments;
 var returnedAppointments;
 
-
 $(window).on("load", function () {
     currentDate = moment().format("LLLL");
     $("#currentDay").append(currentDate);
@@ -46,7 +45,6 @@ $(window).on("load", function () {
         }
     }
 })
-
 
 $(".saveBtn").click(function () {
     appointText = $(this).parent('div').children('div').children('textarea').val();
