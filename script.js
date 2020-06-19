@@ -1,9 +1,9 @@
-var appointText = "";
-var appointTime = "";
+const appointText = "";
+const appointTime = "";
+const tempArray = [];
 var currentDate;
 var currentTime;
 var currentContainer;
-var tempArray = [];
 var storedAppointments;
 var returnedAppointments;
 
