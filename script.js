@@ -1,6 +1,6 @@
-const appointText = "";
-const appointTime = "";
-const tempArray = [];
+var appointText = "";
+var appointTime = "";
+var tempArray = [];
 var currentDate;
 var currentTime;
 var currentContainer;
@@ -20,6 +20,7 @@ $(window).on("load", function () {
                 details = returnedAppointments.details;
                 timeIndex = returnedAppointments.time;
                 timeIndex = timeIndex.replace(":00", '');
+                console.log(details)
                 if (details !== null) {
                     $("#" + timeIndex).children('div').children('div').children('textarea').val(details);
                 }
@@ -62,5 +63,5 @@ $(".saveBtn").click(function () {
         localStorage.setItem("appointments", JSON.stringify(tempArray));
 
     }
-    $(this).parent('div').children('div').children('textarea').replaceWith($('<textarea>' + appointText.addClass("textarea") + '</textarea>'));
+    //$(this).parent('div').children('div').children('textarea').replaceWith($('<textarea>' + appointText.addClass("textarea") + '</textarea>'));
 })
